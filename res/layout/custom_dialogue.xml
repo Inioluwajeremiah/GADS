@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:id="@+id/custom_dialogue_box">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/dialogue_cancel_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_cancel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+            <TextView
+                android:id="@+id/dialogue_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you sure?"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_below="@id/dialogue_cancel_img"/>
+            <Button
+                android:id="@+id/yes_dialogue_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffc125"
+                android:background="@drawable/dialogue_btn_bg"
+                android:layout_below="@+id/dialogue_text"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
